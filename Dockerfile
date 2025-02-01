@@ -50,3 +50,8 @@ COPY ./requirements.txt /lightllm-ae/requirements.txt
 RUN pip install -r /lightllm-ae/requirements.txt --no-cache-dir
 
 COPY . /lightllm-ae
+
+# quickfix
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends vim nano && rm -rf /var/lib/apt/lists/*
+RUN pip install fastchat psutil accelerate
+
