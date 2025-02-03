@@ -27,7 +27,7 @@ for l in DUMPS:
     if metric != "Overall token throughput":
         continue
 
-    _, model, mode, dataset, clients, *_ = name.split('-')
+    _, _, _, model, mode, dataset, clients, *_ = name.split('-')
     clients = int(clients)
     tokens_s = float(val.split(' ')[1])
     # print(model, mode, dataset, clients, tokens_s)
