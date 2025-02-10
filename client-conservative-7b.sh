@@ -1,6 +1,6 @@
 #/bin/sh -x
 
-port=28000
+port=28004
 mode=con
 
 for size in 100 80 60 40 30 20 10; do

@@ -1,6 +1,6 @@
 #/bin/sh -x
 
-port=28004
+port=28006
 mode=con
 model=70b
 

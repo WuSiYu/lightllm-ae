@@ -1,7 +1,7 @@
 
 #/bin/sh -x
 
-port=28003
+port=28002
 mode=agg99
 model=13b
 

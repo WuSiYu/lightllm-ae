@@ -1,6 +1,6 @@
 #/bin/sh -x
 
-port=28004
+port=28009
 mode=our
 model=70b
 

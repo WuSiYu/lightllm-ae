@@ -85,29 +85,6 @@ for model, datasets in DATA.items():
             axs[fig_i].set_xlabel("# of clients")
         fig_i += 1
 
-# 'LightLLM 7B', 'LightLLM 13B', 'LightLLM 70B'
-
-    # if _transpose(i) // 4 == 0:
-    #     plti.set_xlim()
-    #     xticks = [20, 50, 100, 150]
-    #     plti.set_xticks(xticks)
-    #     plti.set_yticks([0, 2500, 5000, 7000])
-    # if _transpose(i) // 4 == 1:
-    #     plti.set_xlim()
-    #     xticks = [20, 40, 60, 80]
-    #     plti.set_xticks(xticks)
-    #     plti.set_yticks([0, 1000, 2000, 3000, 4000])
-    # if _transpose(i) // 4 == 2:
-    #     xticks = [50, 100, 200, 300, 400, 500]
-    #     plti.set_xticks(xticks)
-    #     plti.set_yticks([0, 2500, 5000, 6500])
-    #     plti.set_xlabel("Number of clients")
-
-    # if _transpose(i) % 4 == 0:
-    #     plti.set_ylabel("Throughput (token/s)")
-    # else:
-    #     plti.set_yticklabels([])
-
 
 fig.legend(plots, [
     'Conservative',
@@ -117,6 +94,6 @@ fig.legend(plots, [
     loc='lower center', ncol=3, fontsize=11)
 
 fig.tight_layout(rect=(0, 0.05, 1, 1))
-plt.savefig('fig6.png', dpi=300)
-plt.savefig('fig6.pdf')
-print(">>> figure saved to fig6.png and fig6.pdf")
+plt.savefig('fig7.png', dpi=300)
+plt.savefig('fig7.pdf')
+print(">>> figure saved to fig7.png and fig7.pdf")
